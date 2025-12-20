@@ -482,6 +482,86 @@
     grid-template-columns:1fr;
   }
 }
+/* ---------- SERVICES SECTION ---------- */
+#services{
+  padding:80px 40px;
+  background:#ffffff;
+  text-align:center;
+}
+
+#services h2{
+  font-size:2.4rem;
+  color:#111;
+  margin-bottom:10px;
+}
+
+.services-sub{
+  font-size:14px;
+  color:#666;
+  margin-bottom:50px;
+}
+
+/* GRID */
+.services-grid{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:30px;
+}
+
+/* CARD */
+.service-card{
+  background:#f9fafb;
+  padding:30px 20px;
+  border-radius:16px;
+  box-shadow:0 10px 22px rgba(0,0,0,0.12);
+  transition:transform .35s ease, box-shadow .35s ease;
+}
+
+.service-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 16px 32px rgba(0,0,0,0.18);
+}
+
+.service-card span{
+  font-size:38px;
+  display:block;
+  margin-bottom:15px;
+}
+
+.service-card h4{
+  font-size:16px;
+  font-weight:700;
+  color:#111;
+  margin-bottom:10px;
+}
+
+.service-card p{
+  font-size:14px;
+  color:#555;
+  line-height:1.5;
+}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .services-grid{
+    grid-template-columns:repeat(3,1fr);
+  }
+}
+
+@media(max-width:768px){
+  .services-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:480px){
+  .services-grid{
+    grid-template-columns:1fr;
+  }
+}
+
 
     /* WhatsApp */
     .whatsapp-btn{position:fixed;bottom:20px;right:20px;background:#25d366;color:#fff;padding:15px;border-radius:50%;box-shadow:0 4px 8px rgba(0,0,0,0.2);font-size:24px;cursor:pointer;z-index:200;}
@@ -502,8 +582,8 @@
     <div class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></div>
     <nav id="navMenu">
         <a href="#about">About</a>
+        <a href="#services">Services</a>
       <a href="#projects">Projects</a>   
-      <a href="#contact">Newsletter</a>
       <a href="#testimonials">Testimonial</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -583,6 +663,94 @@ As a Pearl Qualified Professional, she places a strong emphasis on sustainabilit
       </div>
     </div>
   </section>
+
+<!-- SERVICES -->
+<section id="services">
+  <h2>Our Services</h2>
+  <p class="services-sub">
+    Comprehensive structural engineering solutions tailored to complex challenges
+  </p>
+
+  <div class="services-grid">
+
+    <div class="service-card">
+  <span>🏗️</span>
+  <h4>Structural Designs in Steel & Concrete</h4>
+  <p>Optimized design of RCC, steel and composite structural systems.</p>
+</div>
+
+<div class="service-card">
+  <span>🔧</span>
+  <h4>Renovation, Expansion & Retrofitting</h4>
+  <p>Strengthening and modification of existing structures.</p>
+</div>
+
+<div class="service-card">
+  <span>📊</span>
+  <h4>Static & Dynamic Calculations</h4>
+  <p>Accurate analysis for gravity, dynamic and impact loads.</p>
+</div>
+
+<div class="service-card">
+  <span>🌬️</span>
+  <h4>Wind & Seismic Design</h4>
+  <p>Earthquake- and wind-resistant structural solutions.</p>
+</div>
+
+<div class="service-card">
+  <span>🏭</span>
+  <h4>Industrial Facilities</h4>
+  <p>Design of industrial buildings and heavy-duty structures.</p>
+</div>
+
+<div class="service-card">
+  <span>⚙️</span>
+  <h4>Machine Foundations</h4>
+  <p>Vibration-controlled foundations for rotating machinery.</p>
+</div>
+
+<div class="service-card">
+  <span>🌉</span>
+  <h4>Design of Special Structures</h4>
+  <p>Complex, unconventional and high-performance structures.</p>
+</div>
+
+<div class="service-card">
+  <span>🏢</span>
+  <h4>Building Condition Evaluation</h4>
+  <p>Structural health assessment and safety evaluation.</p>
+</div>
+
+<div class="service-card">
+  <span>🔍</span>
+  <h4>Structure Failure Investigation</h4>
+  <p>Root cause analysis of structural distress and failures.</p>
+</div>
+
+<div class="service-card">
+  <span>✔️</span>
+  <h4>Design Proof Checking</h4>
+  <p>Independent verification and peer review of designs.</p>
+</div>
+
+<div class="service-card">
+  <span>🎓</span>
+  <h4>Structural Expertise</h4>
+  <p>Expert consultancy for complex engineering challenges.</p>
+</div>
+
+<div class="service-card">
+  <span>📐</span>
+  <h4>Feasibility Studies</h4>
+  <p>Technical feasibility and preliminary structural assessments.</p>
+</div>
+
+
+  </div>
+</section>
+
+
+
 
   <section id="projects">
   <h2>PROJECTS</h2>
@@ -692,6 +860,12 @@ As a Pearl Qualified Professional, she places a strong emphasis on sustainabilit
       </a>
     </p>
 
+      <p class="contact-email">
+      📧 <a href="mailto:projects@steelandcrete.com">
+        steelandcrete@gmail.com
+      </a>
+    </p>
+
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31430.146250525875!2d76.2989103129192!3d10.035970623982163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sXXVI%2F406%2CPottachal%20Nagar%20Road%2CChangampuzha%20Nagar%20PO%2C%20Ernakulam%20-%20682033!5e0!3m2!1sen!2sin!4v1757668979521!5m2!1sen!2sin">
     </iframe>
@@ -713,13 +887,19 @@ As a Pearl Qualified Professional, she places a strong emphasis on sustainabilit
       </a>
     </p>
 
+     <p class="contact-email">
+      📧 <a href="mailto:projects@steelandcrete.com">
+        projects@steelandcrete.com
+      </a>
+    </p>
+
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.6294434312263!2d76.33129137354146!3d10.047405172220234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d18167f5c5f%3A0x93154f2ad50a56b9!2sCorrazone%20Coworking%20Space!5e0!3m2!1sen!2sin!4v1757669793410!5m2!1sen!2sin">
     </iframe>
   </div>
 <!-- Contact Info -->
 <div class="contact-card">
-  <h3>General Contact</h3>
+  <h3>Job Opportunities</h3>
 
   <p>
     Steel and Crete Structural Solutions LLP<br>
@@ -728,7 +908,7 @@ As a Pearl Qualified Professional, she places a strong emphasis on sustainabilit
 
   <p class="contact-email">
     📧 <a href="mailto:info@steelandcrete.com">
-      info@steelandcrete.com
+      jobs@steelandcrete.com
     </a>
   </p>
 
@@ -828,4 +1008,3 @@ restartTestimonial();
   </script>
 </body>
 </html>
-
